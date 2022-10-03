@@ -9,7 +9,8 @@ public class Main {
         // 2-я книга
         Autor autor2 = new Autor("Джек", "Лондон");
         Book book2 = new Book("Мартин Иден", autor2 , 1985);
-        // Выводим на консоль 1-ю книгу
+
+ /*       // код ДЗ урока "Объекты и классы", заменённый новым с испольхованием toString() и ...
 
         System.out.print("Книга: " + book1.getBookName() + ". ");
 
@@ -25,6 +26,19 @@ public class Main {
         System.out.println();
         book1.setYearPublishing(2000);
         System.out.print("Новое издание книги " + book1.getBookName() + ", год " + book1.getYearPublishing());
+*/
+        System.out.println("Список наших книг:");
+        System.out.println(book1 + " Код (hash) " + book1.hashCode());
+        System.out.println(book2 + " Код (hash) " + book2.hashCode());
+        System.out.println();
 
-    }
-}
+        System.out.println("Проверим написаны ли книги одним автором:");
+        if (autor1.equals(autor2)) { System.out.println("автор у книг один"); }
+        else System.out.println("Авторы у книг разные");
+        System.out.println();
+        System.out.println("Проверим являются ли книги одинаковыми:");
+        if (book1.equals(book2)) { System.out.println("Книги идентичны"); }
+           else System.out.println("Книги разные");
+
+    }   // скобка  main
+}       // скобка класса
